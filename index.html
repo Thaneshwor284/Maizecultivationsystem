@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maize Cultivation Guide - Kathmandu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <h1>Maize Cultivation Guide</h1>
+            </div>
+            <div class="info-cards">
+                <div class="card time-card">
+                    <i class="fas fa-clock"></i>
+                    <div class="card-content">
+                        <h3>Current Time</h3>
+                        <p id="current-time"></p>
+                    </div>
+                </div>
+                <div class="card weather-card">
+                    <i class="fas fa-temperature-high"></i>
+                    <div class="card-content">
+                        <h3>Temperature</h3>
+                        <p id="temperature">25°C</p>
+                    </div>
+                </div>
+                <div class="card humidity-card">
+                    <i class="fas fa-tint"></i>
+                    <div class="card-content">
+                        <h3>Humidity</h3>
+                        <p id="humidity">65%</p>
+                    </div>
+                </div>
+                <div class="card irrigation-card">
+                    <i class="fas fa-water"></i>
+                    <div class="card-content">
+                        <h3>Soil Moisture</h3>
+                        <p id="soil-irrigation">15.75</p>
+                    </div>
+                </div>
+                <div class="card ph-card">
+                    <i class="fas fa-flask"></i>
+                    <div class="card-content">
+                        <h3>pH Value</h3>
+                        <p id="ph-value">6.7</p>
+                    </div>
+                </div>
+                <div class="card time-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <div class="card-content">
+                        <a href="https://www.digokrishi.com/index.php/maize-insect-pest"><h3>Get pesticide</h3></a>
+                    </div>
+                </div><div class="card time-card">
+                    <i class="fas fa-phone"></i>
+                    <div class="card-content">
+                        <a href="tel:+9779823705580"><h3>Contact us </h3></a>
+                       
+                    </div>
+                </div><div class="card time-card">
+                    <i class="fas fa-envelope"></i>
+                    <div class="card-content">
+                        <a href="mailto:trc.thaneshworcdy@gmail.com"><h3>Mail us</h3></a>
+                
+                    </div>
+                </div>
+            </div>
+            <div id="notification" class="notification"></div>
+        </header>
+        
+        <main>
+            <section class="cultivation-info">
+                <h2><i class="fas fa-book"></i> Maize Cultivation Guide</h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h3><i class="fas fa-sun"></i> Climate Requirements</h3>
+                        <p>Maize thrives in temperatures between 20-30°C with moderate humidity.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3><i class="fas fa-water"></i> Water Management</h3>
+                        <p>Regular irrigation needed, especially during the growing season.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3><i class="fas fa-spa"></i> Soil Preparation</h3>
+                        <p>Well-drained, fertile soil with pH between 5.5-7.0 is ideal.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3><i class="fas fa-calendar-alt"></i> Growing Season</h3>
+                        <p>Best planted during spring in Kathmandu region.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="fertilizer-info">
+                <h2><i class="fas fa-leaf"></i> Fertilizer Suggestions</h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h3><i class="fas fa-calendar-alt"></i> Current Season: Winter</h3>
+                        <p>Recommended Fertilizer: Urea and Potash for root development.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="disease-info">
+                <h2><i class="fas fa-virus"></i> Common Diseases & Remedies</h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h3><i class="fas fa-bug"></i> Maize Streak Virus</h3>
+                        <p>Remedy: Use resistant varieties and control vector insects.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3><i class="fas fa-bug"></i> Leaf Blight</h3>
+                        <p>Remedy: Apply fungicides and practice crop rotation.</p>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

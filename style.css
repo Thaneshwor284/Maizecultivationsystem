@@ -1,0 +1,341 @@
+:root {
+    --primary-color: #27ae60;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f9f4;
+    --card-bg: #ffffff;
+    --text-color: #34495e;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    --gradient-bg: linear-gradient(135deg, #ebf5ef 0%, #2ecc71 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url('photos/background.png.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.main-header {
+    background: var(--gradient-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.card-content h3 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-content a:hover {
+    color: var(--primary-color);
+}
+
+.cultivation-info {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.cultivation-info h2 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cultivation-info h2 i {
+    color: var(--primary-color);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-box {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-box p {
+    color: var(--text-color);
+}
+
+.soil-irrigation {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soil-irrigation:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.soil-irrigation i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.soil-irrigation:hover i {
+    color: white;
+}
+
+.soil-irrigation .soil-irrigation-content h3, .soil-irrigation:hover .soil-irrigation-content p {
+    color: white;
+}
+
+.soil-irrigation-content h3 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.soil-irrigation-content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.soil-ph {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soil-ph:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.soil-ph i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.soil-ph:hover i {
+    color: white;
+}
+
+.soil-ph .soil-ph-content h3, .soil-ph:hover .soil-ph-content p {
+    color: white;
+}
+
+.soil-ph-content h3 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.soil-ph-content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.fertilizer-info, .disease-info {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+
+.fertilizer-info h2, .disease-info h2 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fertilizer-info h2 i, .disease-info h2 i {
+    color: var(--primary-color);
+}
+
+.notification {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #ffcccc;
+    color: #c0392b;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: none;
+    text-align: center;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.time-display, .weather-display {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    min-width: 250px;
+}
+
+h2 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#current-time, #weather-data {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .main-header {
+        padding: 1.5rem;
+    }
+    
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .weather-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
